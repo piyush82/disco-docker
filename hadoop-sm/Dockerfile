@@ -35,8 +35,8 @@ WORKDIR /code
 RUN git clone -b hadoop_sm https://github.com/Pentadactylus/sm_openstack
 RUN pip install flask
 
-WORKDIR /code/sm_openstack
-ADD etc/sm.cfg etc/sm.cfg
-RUN python setup.py install
+#WORKDIR /code/sm_openstack
+#ADD etc/sm.cfg etc/sm.cfg
+#RUN python setup.py install
 
-CMD ["service_manager_test", "-c", "etc/sm.cfg"]
+#CMD ["service_manager_test", "-c", "etc/sm.cfg"]
