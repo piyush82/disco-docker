@@ -34,3 +34,6 @@ RUN python setup.py install
 WORKDIR /code
 RUN git clone -b hadoop_sm https://github.com/Pentadactylus/sm_openstack
 RUN pip install flask
+
+WORKDIR /code/sm_openstack
+RUN python setup.py install
